@@ -1,6 +1,9 @@
 terraform {
-#   backend "s3" {
-#   }
+  backend "s3" {
+    bucket  ="terraform-state-061039763240"
+    key     = "textract/terraform.tfstate"
+    region  = "ap-southeast-2"
+  }
   required_version = ">= 1.9.7"
   required_providers {
     aws = {
