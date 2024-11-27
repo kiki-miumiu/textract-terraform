@@ -11,6 +11,7 @@ aws s3api create-bucket --bucket terraform-state-061039763240 --create-bucket-co
 ```bash
 cd terraform
 terraform init
+terraform plan
 ```
 
 ## Useful information

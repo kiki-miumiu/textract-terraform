@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "lambda_bucket" {
-  bucket = "terraform-lambda-{data.aws_caller_identity.current.account_id}"
+  bucket = "terraform-lambda-${data.aws_caller_identity.current.account_id}"
 }
 
 data "archive_file" "lambda_hello_world" {

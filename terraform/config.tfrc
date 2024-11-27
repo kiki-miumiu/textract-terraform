@@ -3,6 +3,6 @@ provider_installation {
       exclude = ["registry.terraform.io/*/*"]
     }
     network_mirror {
-        url = "https://artifactory.internal.cba/artifactory/api/terraform/io.terraform.registry/providers/"
+        url = "https:///artifactory/api/terraform/io.terraform.registry/providers/"
     }
 }
