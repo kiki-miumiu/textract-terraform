@@ -1,3 +1,4 @@
+# Configure Terraform backend and required providers
 terraform {
   backend "s3" {
     bucket  ="terraform-state-061039763240"
@@ -13,6 +14,7 @@ terraform {
   }
 }
 
+# Configure the AWS provider
 provider "aws" {
   region = "ap-southeast-2"
 }
